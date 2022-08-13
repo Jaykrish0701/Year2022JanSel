@@ -7,7 +7,7 @@ public class SortingUsingArray{
 	
 		String [] arr = { "HCL","Wipro","Aspire Systems","CTS"};
 		
-		int length = arr.length;
+		int length = arr.length; //to get the array length
 
 		Arrays.sort(arr);
 			
