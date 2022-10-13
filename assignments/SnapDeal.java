@@ -17,7 +17,7 @@ public class SnapDeal {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
-		ChromeDriver driver = new ChromeDriver(options);
+		ChromeDriver driver = new ChromeDriver(options);		//browser Notifications
 		
 		driver.get("https://www.snapdeal.com/");
 		driver.manage().window().maximize();
@@ -30,8 +30,8 @@ public class SnapDeal {
 		WebElement shirts = driver.findElementByXPath("//span[text()='Shirts']");
 		builder.moveToElement(mens).moveToElement(shirts).click().perform();
 		 
-		 WebElement firstShirt = driver.findElementByXPath("//div[@class='col-xs-6  favDp product-tuple-listing js-tuple ']");
-		 builder.moveToElement(firstShirt).perform();
+		WebElement firstShirt = driver.findElementByXPath("//div[@class='col-xs-6  favDp product-tuple-listing js-tuple ']");
+		builder.moveToElement(firstShirt).perform();
 		 
 		 
 		WebElement first = driver.findElementByXPath("//div[@class='col-xs-6  favDp product-tuple-listing js-tuple ']");
@@ -47,7 +47,7 @@ public class SnapDeal {
 		
 		driver.findElementByXPath("//span[@class='intialtext']").click();
 		
-	    driver.quit();
+	        driver.quit();
 		 	
 	}
 
